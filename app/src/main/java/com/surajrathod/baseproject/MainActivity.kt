@@ -2,10 +2,12 @@ package com.surajrathod.baseproject
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.surajrathod.baseproject.ui.activities.BaseActivity
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        putLayout(R.layout.activity_main)
+        setToolBarTitle("Main Activity")
     }
 }
